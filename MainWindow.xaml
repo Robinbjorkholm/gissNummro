@@ -1,0 +1,18 @@
+﻿<Window x:Class="test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+<Label Name="lblFrom" FontSize="40" Content="0" Margin="55,186,560,172" Width="50"
+ Height="50"></Label>
+        <Label Name="lblTo" FontSize="40" Content="100" Margin="372,190,182,158"></Label>
+        <Label Name="lblWarning" FontSize="40" Content="" Margin="212,296,448,62"></Label>
+        <Label Name="lblLives" FontSize="40" Content="remaining lives: 10" Foreground="green" Margin="185,66,263,299"></Label>
+        <TextBox Focusable="True" GotFocus="TextBoxinput_GotFocus"
+            KeyDown="TextBoxinput_KeyDown" Name="TextBoxinput" FontSize="18" Text="Enter a number" Margin="212,190,473,177" Width="500" Height="100"></TextBox>
+    </Grid>
+</Window>
